@@ -19,9 +19,11 @@
         We will be accepting applications for our 
         %b 2010 Inaugural Program 
         shortly.  For donation or sponsorship information, please contact Bill at 
-        = mail_to("bill@goodventures.org"), "."
+        = succeed "." do
+          = mail_to("bill@goodventures.org")
         If you are interested in mentoring the next generation of game changing web entrepreneurs, please contact Josh at 
-        = mail_to("josh@goodventures.org"), "."
+        = succeed "." do
+          = mail_to("josh@goodventures.org")
         
       .covers
         .cover
