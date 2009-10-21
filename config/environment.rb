@@ -15,10 +15,24 @@ Rails::Initializer.run do |config|
   # config.load_paths += %W( #{RAILS_ROOT}/extras )
 
   # Specify gems that this application depends on and have them installed with rake gems:install
-  # config.gem "bj"
-  # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
-  # config.gem "sqlite3-ruby", :lib => "sqlite3"
-  # config.gem "aws-s3", :lib => "aws/s3"
+  config.gem "bj"
+  config.gem "hpricot"
+  config.gem "net-ssh", :lib => "net/ssh"
+  config.gem "random_data"
+  config.gem "haml"
+  config.gem "authlogic"
+  config.gem "gchart"
+  config.gem 'adwords4r'
+  config.gem "highline"
+  config.gem 'validates_timeliness'
+  config.gem "thoughtbot-factory_girl", :lib    => "factory_girl", :source => "http://gems.github.com"
+  config.gem "thoughtbot-shoulda", :lib => "shoulda", :source => "http://gems.github.com"
+  config.gem 'chriseppstein-compass', :lib => 'compass', :source => "http://gems.github.com", :version => '>=0.8.16'
+  config.gem 'chriseppstein-compass-colors', :source => "http://gems.github.com",  :lib => 'compass'
+  config.gem 'thoughtbot-paperclip', :lib => 'paperclip', :source => 'http://gems.github.com'
+  config.gem 'nokogiri'
+  config.gem 'garb'
+  config.gem 'cannikin-gattica', :lib => 'gattica'
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
@@ -39,3 +53,5 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
+require 'common_utils'
