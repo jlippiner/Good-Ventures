@@ -1,0 +1,28 @@
+!!!
+%html{ :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    = yield :head
+  
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %title
+    = javascript_include_tag 'jquery.min', 'jquery-ui-1.7.2.custom.min.js', 'facebox', 'jquery.labelify', 'jquery.livequery', 'common_utils.js', 'flash.js', :cache => true 
+    = javascript_include_tag 'jquery.tablesorter.min.js', "controllers/#{params[:controller]}"
+    = javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery?
+
+    = stylesheet_link_tag 'compiled/default.css'
+    = stylesheet_link_tag 'ui-lightness/jquery-ui-1.7.1.custom'
+  %body
+    #header
+      #logo
+    
+    #container
+      #flash.ui-widget
+        = render :partial => "layouts/flash"
+
+      = yield
+    
+    #footer
+      .small
+        Copyright 2009 - Noctivity, Inc.
+        %br
+        %b Authorized Access Only!

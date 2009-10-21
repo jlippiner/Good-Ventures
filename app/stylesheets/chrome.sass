@@ -1,0 +1,61 @@
+@import blueprint/modules/colors.sass
+
+!base_font_size = 12px
+!h1 = !base_font_size + 12
+!base_link = darken(#0000FF,20)
+
+!background = #E9E9E9 
+!header_bar = #909BA6
+
+!sidebar = #54554C
+!sidebar_on = #3B5998
+!sidebar_on_text = #333333
+!sidebar_off_text = #999999
+!sidenav_title = #2E3657
+!sidebar_sep_top = #909BA6
+!sidebar_sep_bottom = #FFFFFF
+!sidebar_links = #FFFFFF
+
+!content = #D2D4C2
+!canvas_text = #54554C  
+
+!footer_text = gray
+!section = #FFFFFF
+!section_header = #54554C
+!section_header_text = #FFFFFF
+!section_border = #999999
+!section_header_text_size = 1.1em
+!section_radius = 10px
+!section_text = #333
+!section_links = #333
+
+!box = #FFFFFF
+!box_header = #909BA6
+!box_header_text = #FFF
+!box_header_row = #D5D6CB
+!box_header_row_text = #343434
+!box_border = #666
+
+!new_header =  #E9E9E9
+!active_header =  #306249
+!pending_header = #FFDD73
+!review_header = #FFDD73
+!logged_header = #B93920
+
+!new_header_text =  !section_header_text
+!active_header_text =  !section_header_text
+!pending_header_text = !sidebar
+!review_header_text = !sidebar
+!logged_header_text = !section_header_text
+
+!pending = darken(!pending_header,30)
+!active = darken(!active_header,30)
+!remaining = darken(blue, 30)
+!since = lighten(!active, 20)
+!pending_text = !sidebar
+!active_text = #FFFFFF
+!logged = darken(!logged_header,30)
+!logged_text = !section_header_text
+
+
+@import partials/application.sass

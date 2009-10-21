@@ -1,0 +1,83 @@
+--- !ruby/object:Gem::Specification 
+name: Chrononaut-no_fuzz
+version: !ruby/object:Gem::Version 
+  version: 0.0.2
+platform: ruby
+authors: 
+- "Bj\xC3\xB8rn Arild M\xC3\xA6land"
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-04-30 00:00:00 -04:00
+default_executable: 
+dependencies: []
+
+description: No Fuzz
+email: bjorn.maeland@gmail.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- README.markdown
+- tasks/no_fuzz_tasks.rake
+- lib/no_fuzz.rb
+- CHANGELOG
+files: 
+- Rakefile
+- README.markdown
+- no_fuzz.gemspec
+- tasks/no_fuzz_tasks.rake
+- init.rb
+- lib/no_fuzz.rb
+- generators/no_fuzz/USAGE
+- generators/no_fuzz/templates/migration.rb
+- generators/no_fuzz/templates/model.rb
+- generators/no_fuzz/no_fuzz_generator.rb
+- MIT-LICENSE
+- install.rb
+- test/no_fuzz_test.rb
+- test/database.yml
+- test/schema.rb
+- test/test_helper.rb
+- rails/init.rb
+- CHANGELOG
+- uninstall.rb
+- Manifest
+has_rdoc: true
+homepage: http://github.com/Chrononaut/no_fuzz
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --line-numbers
+- --inline-source
+- --title
+- No_fuzz
+- --main
+- README.markdown
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "1.2"
+  version: 
+requirements: []
+
+rubyforge_project: no_fuzz
+rubygems_version: 1.3.5
+signing_key: 
+specification_version: 2
+summary: No Fuzz
+test_files: 
+- test/no_fuzz_test.rb
+- test/test_helper.rb

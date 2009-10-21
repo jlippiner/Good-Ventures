@@ -1,0 +1,52 @@
+@import partials/base.sass
+@import partials/facebox_content.sass
+@import partials/pages.sass
+
+html, body
+  margin: 0
+  padding: 0
+
+body
+  font-size= !base_font_size
+  margin: 0px auto
+   
+  #container
+    padding: 0px 10px
+    +container
+    
+    #errorExplanation
+      +error
+
+  #header
+    overflow: hidden
+
+    #logo
+      padding: 5px
+      +largest
+      font-family: "VT-100", monospace
+      +right
+
+    #nav
+      padding-right: 10px
+      +float-right
+      +smaller
+      
+      a
+        padding-left: 5px
+   
+  #footer
+    overflow: hidden
+    position: relative
+    width: 100%
+    text-align: center
+    padding-top: 80px
+    +smaller
+
+    
+.info_box
+  margin: 5px
+  +normal
+  padding: 5px
+  border: 1px dotted #333
+  background: #99CCCC
+

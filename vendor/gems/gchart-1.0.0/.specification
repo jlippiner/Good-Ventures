@@ -1,0 +1,116 @@
+--- !ruby/object:Gem::Specification 
+name: gchart
+version: !ruby/object:Gem::Version 
+  version: 1.0.0
+platform: ruby
+authors: 
+- John Barnette
+- Jim Ludwig
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-08-11 00:00:00 -04:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: hoe
+  type: :development
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 2.3.2
+    version: 
+description: |-
+  GChart exposes the Google Chart API via a friendly Ruby interface. It
+  can generate the URL for a given chart (for webpage use), or download
+  the generated PNG (for offline use).
+email: 
+- jbarnette@rubyforge.org
+- supplanter@rubyforge.org
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- Manifest.txt
+- CHANGELOG.rdoc
+- README.rdoc
+files: 
+- CHANGELOG.rdoc
+- Manifest.txt
+- README.rdoc
+- Rakefile
+- lib/gchart.rb
+- lib/gchart/axis.rb
+- lib/gchart/axis/bottom_axis.rb
+- lib/gchart/axis/horizontal_axis.rb
+- lib/gchart/axis/left_axis.rb
+- lib/gchart/axis/right_axis.rb
+- lib/gchart/axis/top_axis.rb
+- lib/gchart/axis/vertical_axis.rb
+- lib/gchart/bar.rb
+- lib/gchart/base.rb
+- lib/gchart/colors.rb
+- lib/gchart/line.rb
+- lib/gchart/map.rb
+- lib/gchart/meter.rb
+- lib/gchart/pie.rb
+- lib/gchart/pie_3d.rb
+- lib/gchart/scatter.rb
+- lib/gchart/sparkline.rb
+- lib/gchart/venn.rb
+- lib/gchart/xy_line.rb
+- spec/gchart/axis/bottom_axis_spec.rb
+- spec/gchart/axis/left_axis_spec.rb
+- spec/gchart/axis/right_axis_spec.rb
+- spec/gchart/axis/top_axis_spec.rb
+- spec/gchart/axis_spec.rb
+- spec/gchart/bar_spec.rb
+- spec/gchart/base_spec.rb
+- spec/gchart/colors_spec.rb
+- spec/gchart/line_spec.rb
+- spec/gchart/map_spec.rb
+- spec/gchart/meter_spec.rb
+- spec/gchart/pie_3d_spec.rb
+- spec/gchart/pie_spec.rb
+- spec/gchart/scatter_spec.rb
+- spec/gchart/sparkline_spec.rb
+- spec/gchart/venn_spec.rb
+- spec/gchart/xy_line_spec.rb
+- spec/gchart_spec.rb
+- spec/helper.rb
+- spec/spec.opts
+has_rdoc: true
+homepage: http://github.com/jbarnette/gchart
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --main
+- README.rdoc
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: gchart
+rubygems_version: 1.3.5
+signing_key: 
+specification_version: 3
+summary: GChart exposes the Google Chart API via a friendly Ruby interface
+test_files: []
+
