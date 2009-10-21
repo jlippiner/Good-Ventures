@@ -2,7 +2,7 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: v16_development
+  database: gv_development
   pool: 5
   username: root
   password:
@@ -12,7 +12,7 @@ test:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: v16_test
+  database: gv_test
   pool: 5
   username: root
   password:
